@@ -2,7 +2,6 @@
 
 const userName = 'Mario';
 
-
 // Dichiara la funzione qui.
 
 function string (word){
@@ -14,6 +13,31 @@ function string (word){
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(string('Ciao'));
+const result = string('Ciao');
+console.log(result);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+
+// versione arrow fuction
+
+// Dichiara la funzione qui.
+
+const helloUser = (word) => {
+
+    const stringPlusString = word + ' ' + userName;
+    return stringPlusString;
+
+}
+
+// Invoca la funzione qui e stampa il risultato in console
+
+const secondResult = helloUser('Ciao');
+console.log(secondResult);
+
+//Risultato atteso se si passa 'Mario': // ciao Mario
+
+
+
+

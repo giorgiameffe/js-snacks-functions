@@ -29,3 +29,30 @@ console.log(result);
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
 
+// versione arrow function
+
+// Dichiara la funzione qui.
+
+const secondArray = [];
+
+const namesWithSameFirstLetter = (firstArray,letterString) => {
+    
+    for (let i = 0; i < firstArray.length; i++) {
+        
+        if(firstArray[i].startsWith(letterString)) {
+            
+            secondArray.push(firstArray[i]);
+        }
+}
+ return secondArray;
+
+}
+
+// Invoca la funzione qui e stampa il risultato in console
+
+const secondResult = namesWithSameFirstLetter(names, 'A');
+console.log(secondResult);
+
+//Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
+
+

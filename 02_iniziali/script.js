@@ -4,15 +4,15 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const newArray = [];
+function createNewArray (list) {
 
-function createNewArray (arrayOne,arrayTwo) {
-
+    const newArray = [];
     
-    for (let i = 0; i < arrayOne.length; i++) { 
-        
-        const firstLetter = arrayOne[i].substring(0,1);
-        arrayTwo.push(firstLetter);
+    for (let i = 0; i < list.length; i++) { 
+
+        const element = list[i];
+        const firstLetter = element[0];
+        newArray.push(firstLetter);
     }
     
     return newArray;
@@ -20,7 +20,7 @@ function createNewArray (arrayOne,arrayTwo) {
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const result = createNewArray(names,newArray);
+const result = createNewArray(names);
 console.log(result);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
@@ -29,24 +29,25 @@ console.log(result);
 
 // Versione con arrow fuctions
 
-const secondArray = [];
-
 // Dichiara la funzione qui.
 
-const singleLetterArray = (arrayOne,arrayTwo) => {
+const singleLetterArray = (list) => {
 
-    for (let i = 0; i < arrayOne.length; i++) { 
-        
-        const firstLetter = arrayOne[i].substring(0,1);
-        arrayTwo.push(firstLetter);
+    const newArray = [];
+    
+    for (let i = 0; i < list.length; i++) { 
+
+        const element = list[i];
+        const firstLetter = element[0];
+        newArray.push(firstLetter);
     }
     
-    return secondArray;
+    return newArray;
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const secondResult = createNewArray(names,secondArray);
+const secondResult = createNewArray(names);
 console.log(secondResult);
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

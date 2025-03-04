@@ -5,9 +5,11 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
-const newArray = [];
+
 
 function firstLetterArrow (firstArray, letterString) {
+
+    const newArray = [];
 
     for (let i = 0; i < firstArray.length; i++) {
 
@@ -33,18 +35,21 @@ console.log(result);
 
 // Dichiara la funzione qui.
 
-const secondArray = [];
 
 const namesWithSameFirstLetter = (firstArray,letterString) => {
-    
+
+    const newArray = [];
+
     for (let i = 0; i < firstArray.length; i++) {
-        
+
         if(firstArray[i].startsWith(letterString)) {
-            
-            secondArray.push(firstArray[i]);
+
+            newArray.push(firstArray[i]);
         }
-}
- return secondArray;
+        
+    }
+
+    return newArray;
 
 }
 

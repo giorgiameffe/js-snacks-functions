@@ -4,16 +4,16 @@ const userName = 'Mario';
 
 // Dichiara la funzione qui.
 
-function string (word){
+function string (name){
 
-    const helloPlusUser = word + ' ' + userName;
+    const helloPlusUser = 'Ciao' + ' ' + name;
     return helloPlusUser;
 
 }
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const result = string('Ciao');
+const result = string('Giorgia');
 console.log(result);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
@@ -24,16 +24,11 @@ console.log(result);
 
 // Dichiara la funzione qui.
 
-const helloUser = (word) => {
-
-    const stringPlusString = word + ' ' + userName;
-    return stringPlusString;
-
-}
+const helloUser = (name) => 'Ciao' + ' ' + name;
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const secondResult = helloUser('Ciao');
+const secondResult = helloUser ('Mario');
 console.log(secondResult);
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
